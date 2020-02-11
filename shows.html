@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Neuvoids</title>
+<title>Neuvoids' news</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 </head>
 <body>
-  <canvas id="nokey">
+<canvas id="nokey">
   </canvas>
-<ul>	
+<ul>
   <li><a href="index.html">Radio</a></li>
   <li><a href="livestream.html">Livestream</a></li>
   <li><a href="https://neuvoids.tumblr.com/" target="blank">News</a></li>
@@ -17,11 +17,9 @@
   <li><a href="shows.html">Past shows</a></li>
   <li><a href="about.html">About</a></li>	
   </a>
-</ul>
-  <iframe src="https://radio.neuvoids.live/public/stream/embed" frameborder="0" allowtransparency="true" style="width: 30%; min-height: 20px; border: 0;"></iframe>
-  
-
-  <script>var canvas = document.getElementById('nokey'),
+</ul> 
+<iframe width="50%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FNeuvoids%2F" frameborder="0" ></iframe>
+<script>var canvas = document.getElementById('nokey'),
       can_w = parseInt(canvas.getAttribute('width')),
       can_h = parseInt(canvas.getAttribute('height')),
       ctx = canvas.getContext('2d');
@@ -295,5 +293,4 @@
   });
   </script>
 </body>
-	
 </html>

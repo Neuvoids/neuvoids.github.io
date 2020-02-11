@@ -1,4 +1,30 @@
-var canvas = document.getElementById('nokey'),
+ <!doctype html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<meta charset="utf-8">
+<title>Neuvoids</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+<body>
+  <canvas id="nokey">
+  </canvas>
+<ul>	
+  <li><a href="index.html">Radio</a></li>
+  <li><a href="livestream.html">Livestream</a></li>
+  <li><a href="https://neuvoids.tumblr.com/" target="blank">News</a></li>
+  <li><a href="schedule.html">Schedule</a></li>
+  <li><a href="shows.html">Past shows</a></li>
+  <li><a href="about.html">About</a></li>	
+  </a>
+</ul>
+  <p>Neuvoids is an online broadcasting platform made to introduce new, underground and diverse music to people.<br> 
+  It consists of a webradio and livestreamed events with different types of shows (DJ sets, showcases, curated playlists, talk shows and many more).<br>
+  You can find Neuvoids on <a href="https://twitter.com/Neuvoids" target="blank">Twitter</a>, 
+  <a href="https://mixcloud.com/Neuvoids" target="blank">Mixcloud</a>, 
+  <a href="https://www.facebook.com/Neuvoids/" target="blank">Facebook</a> and on the official <a href="https://discord.gg/BBkRBSN">Discord server</a>.</p>
+  <script>var canvas = document.getElementById('nokey'),
       can_w = parseInt(canvas.getAttribute('width')),
       can_h = parseInt(canvas.getAttribute('height')),
       ctx = canvas.getContext('2d');
@@ -270,3 +296,7 @@ var canvas = document.getElementById('nokey'),
       mouse_ball.y = e.pageY;
       // console.log(mouse_ball);
   });
+  </script>
+</body>
+	
+</html>
