@@ -39,7 +39,6 @@ li {
   display: table-cell; 
   position: relative; 
   padding: 15px 0;
-  z-index:-1;
 }
 
 a {
