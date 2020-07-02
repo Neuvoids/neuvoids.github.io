@@ -1,25 +1,27 @@
 <!doctype html>
-<html>
+
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Neuvoids</title>
-<link href="style.css" rel="stylesheet" type="text/css">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <meta charset="utf-8">
+
+  <title>Neuvoids</title>
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+
   <canvas id="nokey">
   </canvas>
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="https://neuvoids.tumblr.com/" target="blank">News</a></li>
-  <li><a href="https://twitch.tv/neuvoids">Twitch</a></li>
-  <li><a href="https://www.mixcloud.com/Neuvoids/">Mixcloud</a></li>
-  <li><a href="about.html">About</a></li>
-  </a>
-</ul>
-
-<iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=2&amp;bgcolor=%23000000&amp;ctz=Europe%2FParis&amp;src=bmV1dm9pZHNAZ21haWwuY29t&amp;color=%23039BE5&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showTabs=0&amp;showPrint=0&amp;title=Neuvoids%20schedule&amp;mode=AGENDA" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-  <script>var canvas = document.getElementById('nokey'),
+<nav class="navbar">
+<a href="https://discord.gg/5kznTDh">Discord</a>
+<a href="https://twitch.tv/neuvoids">Twitch</a>
+<a href="https://mixcloud.com/neuvoids" target="blank">Mixcloud</a>
+<a href="https://neuvoids.bandcamp.com/" target="blank">Bandcamp</a>
+</nav>
+<div id="home"><img src="neuvoids.png"></img></div>
+<div id="about">Online broadcasting platform/netlabel.</p></div>
+<script>var canvas = document.getElementById('nokey'),
       can_w = parseInt(canvas.getAttribute('width')),
       can_h = parseInt(canvas.getAttribute('height')),
       ctx = canvas.getContext('2d');
@@ -267,31 +269,9 @@
       window.requestAnimationFrame(render);
   }
   goMovie();
-
-  // Mouse effect
-  canvas.addEventListener('mouseenter', function(){
-      console.log('mouseenter');
-      mouse_in = true;
-      balls.push(mouse_ball);
-  });
-  canvas.addEventListener('mouseleave', function(){
-      console.log('mouseleave');
-      mouse_in = false;
-      var new_balls = [];
-      Array.prototype.forEach.call(balls, function(b){
-          if(!b.hasOwnProperty('type')){
-              new_balls.push(b);
-          }
-      });
-      balls = new_balls.slice(0);
-  });
-  canvas.addEventListener('mousemove', function(e){
-      var e = e || window.event;
-      mouse_ball.x = e.pageX;
-      mouse_ball.y = e.pageY;
-      // console.log(mouse_ball);
-  });
   </script>
+<script>function scrollTo(hash) {
+    location.hash = "#" + hash;
+}</script>
 </body>
-
 </html>
